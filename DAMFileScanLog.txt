@@ -1,0 +1,218 @@
+
+-------- DAM File Scan Log   29 May 19 17:29:54 --------
+
+User's Guide    V1.10
+
+   This program scans DAMSystem3 and DAMSystemMB Monitor data files to produce validated output files at any bin length. Use as follows:
+
+1. Select Input Data Folder to choose the location of the DAMSystem data text files. File names must be of the form MonitorNNN.txt, where NNN = 1 to 254, or LC for Light Control. Files must consist of 42 tab-delimited columns.
+
+2. Choose the monitor range to be scanned, and click Scan to initiate read and review of the input files. Results include the earliest and latest readings for each file, number of readings with monitor errors, and total number of readings. Uncheck the Verify Data box to speed up scanning if the input files are known to be good.
+
+3. Choose the first and last bins to be saved, and the output bin length.
+
+4. Choose the Output Data Type. DAMSystem3 counts data may be output as either Monitor Counts, in the same 42-column format as the input files, or Channel Counts, in the legacy DAMSystem2 format of 32 single-column files per monitor. 
+
+5. DAMSystemMB multibeam data may be output as either Monitor files, containing summary data from each tube in one file per monitor, or Tube files, containing detailed data from each tube in individual files. Channel file output may also be used for tube summary data.
+
+6. Multiple input readings within the time frame of a single output bin are combined either by sum or average. The number of these 'extra' readings is reported for each bin in column 5 of the output monitor or tube file.    
+
+7. RunName specifies the name of the output data folder, which will be created alongside the input folder. The individual output files will be named with the RunName prefix plus the output data type.
+
+8. Click Save to produce the output files. Results for each monitor are reported as follows:
+  R = Input readings included in output
+  E = Input readings with errors (output as 0)
+  S = (Skipped) output bins with no input data (output as 0)
+  X = Extra readings (combined into output)
+
+Preview reports as Save, but produces no output files.
+
+9. Save Log adds this log to file DAMFileScanLog.txt.
+
+Note: Input data is contained in 'readings', which may or may not be periodic, and sequences of which may contain gaps. Output data is produced in 'bins', which are guaranteed to be periodic and sequentially complete.
+
+---------- Input Data Folder ----------
+Full Path= 
+C:\
+Users\
+Windows 10\
+Dropbox\
+Sehgal Lab\
+Sensory DAM\
+Dop1R2 RNAi\
+nsybG4GS_KK105324_190516\
+
+Contents=
+Monitor: 84
+Monitors: 92 - 93
+
+---------- File Scan ----------
+Monitor   Earliest ... Latest   Errors/Readings
+M84:  16 May 19  15:08:00 ... 29 May 19  14:44:00   89/18697
+M92:  16 May 19  15:08:00 ... 29 May 19  14:44:00   69/18697
+M93:  16 May 19  15:08:00 ... 29 May 19  14:44:00   51/18697
+Scan complete
+
+---------- Save Channel Files ----------
+First Bin: 17 May 19  08:55:00
+Last Bin: 29 May 19  08:54:00
+Bin length (sec): 60
+Output Bins: 17280
+Extra readings: Sum into bin
+
+Output Folder Path: 
+C:\
+Users\
+Windows 10\
+Dropbox\
+Sehgal Lab\
+Sensory DAM\
+Dop1R2 RNAi\
+0517\
+
+0517CtM084C:  R=17280    E=88    S=0    X=0
+0517CtM092C:  R=17280    E=69    S=0    X=0
+0517CtM093C:  R=17280    E=51    S=0    X=0
+Save complete
+
+---------- Input Data Folder ----------
+Full Path= 
+C:\
+Users\
+Windows 10\
+Dropbox\
+Sehgal Lab\
+Sensory DAM\
+Dop1R2 RNAi\
+nsybG4GS_KK105324_190519\
+Monitor Data\
+
+Contents=
+Monitor: 85
+Monitors: 94 - 95
+Monitors: 97 - 98
+
+---------- File Scan ----------
+Monitor   Earliest ... Latest   Errors/Readings
+M85:  19 May 19  19:35:00 ... 29 May 19  14:44:00   52/14110
+M94:  19 May 19  19:38:00 ... 29 May 19  14:44:00   46/14107
+M95:  19 May 19  19:35:00 ... 29 May 19  14:44:00   94/14110
+M97:  19 May 19  19:35:00 ... 29 May 19  14:44:00   49/14110
+M98:  19 May 19  19:35:00 ... 29 May 19  14:44:00   65/14110
+Scan complete
+
+---------- File Scan ----------
+Monitor   Earliest ... Latest   Errors/Readings
+M85:  19 May 19  19:35:00 ... 29 May 19  14:44:00   52/14110
+M94:  19 May 19  19:38:00 ... 29 May 19  14:44:00   46/14107
+M95:  19 May 19  19:35:00 ... 29 May 19  14:44:00   94/14110
+M97:  19 May 19  19:35:00 ... 29 May 19  14:44:00   49/14110
+M98:  19 May 19  19:35:00 ... 29 May 19  14:44:00   65/14110
+Scan complete
+
+---------- Save Channel Files ----------
+First Bin: 20 May 19  08:55:00
+Last Bin: 29 May 19  08:54:00
+Bin length (sec): 60
+Output Bins: 12960
+Extra readings: Sum into bin
+
+Output Folder Path: 
+C:\
+Users\
+Windows 10\
+Dropbox\
+Sehgal Lab\
+Sensory DAM\
+Dop1R2 RNAi\
+nsybG4GS_KK105324_190519\
+0520\
+
+0520CtM085C:  Save cancel
+
+---------- File Scan ----------
+Monitor   Earliest ... Latest   Errors/Readings
+M85:  19 May 19  19:35:00 ... 29 May 19  14:44:00   52/14110
+M94:  19 May 19  19:38:00 ... 29 May 19  14:44:00   46/14107
+M95:  19 May 19  19:35:00 ... 29 May 19  14:44:00   94/14110
+M97:  19 May 19  19:35:00 ... 29 May 19  14:44:00   49/14110
+M98:  19 May 19  19:35:00 ... 29 May 19  14:44:00   65/14110
+Scan complete
+
+---------- Input Data Folder ----------
+Full Path= 
+C:\
+Users\
+Windows 10\
+Dropbox\
+Sehgal Lab\
+Sensory DAM\
+Dop1R2 RNAi\
+nsybG4GS_KK105324_190519\
+Monitor Data\
+
+Contents=
+Monitor: 85
+Monitors: 94 - 95
+Monitors: 97 - 98
+Monitors: 100 - 101
+
+---------- File Scan ----------
+Monitor   Earliest ... Latest   Errors/Readings
+M85:  19 May 19  19:35:00 ... 29 May 19  14:44:00   52/14110
+M94:  19 May 19  19:38:00 ... 29 May 19  14:44:00   46/14107
+M95:  19 May 19  19:35:00 ... 29 May 19  14:44:00   94/14110
+M97:  19 May 19  19:35:00 ... 29 May 19  14:44:00   49/14110
+M98:  19 May 19  19:35:00 ... 29 May 19  14:44:00   65/14110
+M100:  19 May 19  19:35:00 ... 29 May 19  14:44:00   57/14110
+M101:  19 May 19  19:35:00 ... 29 May 19  14:44:00   52/14110
+Scan complete
+
+---------- Save Channel Files ----------
+First Bin: 20 May 19  08:55:00
+Last Bin: 29 May 19  08:54:00
+Bin length (sec): 60
+Output Bins: 12960
+Extra readings: Sum into bin
+
+Output Folder Path: 
+C:\
+Users\
+Windows 10\
+Dropbox\
+Sehgal Lab\
+Sensory DAM\
+Dop1R2 RNAi\
+nsybG4GS_KK105324_190519\
+0520\
+
+0520CtM085C:  R=12960    E=52    S=0    X=0
+0520CtM094C:  R=12960    E=45    S=0    X=0
+0520CtM095C:  R=12960    E=94    S=0    X=0
+0520CtM097C:  R=12960    E=49    S=0    X=0
+0520CtM098C:  R=12960    E=65    S=0    X=0
+0520CtM100C:  R=12960    E=55    S=0    X=0
+0520CtM101C:  R=12960    E=52    S=0    X=0
+Save complete
+
+---------- Input Data Folder ----------
+Full Path= 
+C:\
+Users\
+Windows 10\
+Dropbox\
+Sehgal Lab\
+Sensory DAM\
+TrpA1\
+orco_TrpA1_6hr28_190410\
+Monitor Data\
+
+Contents=
+Monitor: 49
+Monitor: 51
+
+---------- File Scan ----------
+Monitor   Earliest ... Latest   Errors/Readings
+M49:  10 Apr 19  14:16:00 ... 16 Apr 19  20:12:00   68/8997
+M51:  10 Apr 19  14:16:00 ... 16 Apr 19  20:11:00   72/8996
+Scan complete
